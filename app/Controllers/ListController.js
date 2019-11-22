@@ -35,5 +35,25 @@ export default class ListController {
     _drawLists();
   }
 
+  addList(event) {
+    // FIXME make body responsive in height to accomodate more lists
+    event.preventDefault();
+    let formData = event.target;
+    let newList = {
+      name: formData.name.value
+      // items: []
+    };
+
+    ListService.addList(newList);
+    formData.reset();
+
+    _drawLists();
+  }
+
+  deleteList(listId) {
+    ListService.deleteList(listId);
+    _drawLists();
+  }
+
   //TODO: Your app will need the ability to create, and delete both lists and listItems
 }

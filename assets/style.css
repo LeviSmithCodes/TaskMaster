@@ -10,3 +10,16 @@ html,
 body {
   background-color: var(--secondary);
 }
+
+.list-item-with-check {
+  cursor: pointer;
+}
+
+/* .list-item-with-check:hover:before {
+  content: <i class= "far fa-square" ></i>;
+} */
+
+/* .list-item-with-check:before {
+  font-family: "FontAwesome";
+  content: "\f0c8";
+} */

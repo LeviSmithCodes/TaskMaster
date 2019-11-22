@@ -7,7 +7,6 @@ export default class Item {
     this.listId = listId;
   }
   get template() {
-    return `<li>${this.text}</li>
-    <button class="btn btn-danger" type="button" onclick="app.listController.deleteItem('${this.listId}','${this.id}')">delete me</button>`;
+    return `<dt><i class="far fa-check-square list-item-with-check" onclick="app.listController.deleteItem('${this.listId}','${this.id}')"></i> ${this.text}</dt>`; // TODO self stretch: Make these empty boxes that fill with a check on hover
   }
 }
