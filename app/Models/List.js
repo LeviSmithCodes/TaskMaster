@@ -16,15 +16,17 @@ export default class List {
     <h1 class="text-center mb-3 border-bottom text-white">
       ${this.name}
     </h1>
-    <dl class="ml-5 text-white">
-    ${this.drawItems()}</dl>
-    <form class="mx-auto" onsubmit="app.ListController.addItem(event);">
+    <ul class="ml-5 text-white">
+    ${this.drawItems()}</ul>
+    <form class="mx-auto" onsubmit="app.listController.addItem(event, '${
+      this.id
+    }')">
       <div class="form-group row justify-content-center">
         <div class="col-sm-1-12">
           <input
             type="text"
             class="form-control"
-            name="Name?"
+            name="text"
             id="ItemInput"
             placeholder="Add an item here"
           />
