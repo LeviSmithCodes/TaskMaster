@@ -31,8 +31,13 @@ export default class ListController {
   }
 
   deleteItem(listId, itemId) {
-    ListService.deleteItem(listId, itemId);
-    _drawLists();
+    let delConfirmation = confirm(
+      "Are you sure you want to check off this item?"
+    );
+    if (delConfirmation) {
+      ListService.deleteItem(listId, itemId);
+      _drawLists();
+    }
   }
 
   addList(event) {
@@ -51,8 +56,11 @@ export default class ListController {
   }
 
   deleteList(listId) {
-    ListService.deleteList(listId);
-    _drawLists();
+    let delConfirmation = confirm("Are you sure you want to delete this list?");
+    if (delConfirmation) {
+      ListService.deleteList(listId);
+      _drawLists();
+    }
   }
 
   //TODO: Your app will need the ability to create, and delete both lists and listItems
