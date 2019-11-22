@@ -13,6 +13,50 @@
   </head>
 
   <body>
+    <header class="container-fluid h-25 bg-dark text-white text-center mb-3">
+      <!-- REVIEW why is mb-3 not appearing to work?-->
+      <h1>Listr</h1>
+    </header>
+    <main class="container-fluid bg-secondary">
+      <!-- REVIEW why is there not a row here?-->
+      <div id="lists" class="row p-3 justify-content-around">
+        <!-- <div class="col-5 mt-3 p-3 border rounded bg-info">
+          <h1 class="text-center mb-3 border-bottom text-white">
+            Maybe a list
+          </h1>
+          <form class="mx-auto" onsubmit="app.ListController.addItem(event);">
+            <div class="form-group row justify-content-center">
+              <div class="col-sm-1-12"> -->
+        <!-- REVIEW what is this notation? -->
+        <!-- <input
+                  type="text"
+                  class="form-control"
+                  name="Name?"
+                  id="ItemInput"
+                  placeholder="Add an item here"
+                />
+              </div>
+            </div>
+            <div class="row form-group justify-content-center">
+              <div class="col-sm-8">
+                <button type="submit" class="btn btn-primary btn-block">
+                  Add Item
+                </button>
+              </div>
+            </div>
+          </form>
+        </div> -->
+      </div>
+      <!-- <div class="row col-12">
+        <div class="col-4"></div>
+        <div class="col-4"></div>
+        <div class="col-4"></div>
+      </div> -->
+    </main>
+    <footer class="container-fluid h-25 bg-dark text-white text-center">
+      <!-- FIXME why am I getting margin at the bottom? -->
+      <p>This be a footer yarr</p>
+    </footer>
     <script src="app/main.js" type="module"></script>
   </body>
 </html>

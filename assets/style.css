@@ -1,0 +1,12 @@
+/* * {
+  border: 1px solid red;
+} */
+
+main {
+  height: 100vh;
+}
+
+html,
+body {
+  background-color: var(--secondary);
+}
