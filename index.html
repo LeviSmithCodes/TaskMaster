@@ -17,18 +17,28 @@
       href="https://fonts.googleapis.com/css?family=Vollkorn&display=swap"
       rel="stylesheet"
     />
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
+    <script src="sweetalert2.all.min.js"></script>
+    <!-- not sure if I'm doing this right -->
     <title>Listr</title>
   </head>
 
   <body>
-    <header class="container-fluid h-25 bg-dark text-white text-center mb-3">
+    <header
+      class="container-fluid h-25 bg-dark text-white text-center pb-3 mb-4"
+    >
       <!-- REVIEW why is mb-3 not appearing to work?-->
       <h1>Listr</h1>
       <div class="col-12 mt-3 p-3 ">
-        <h5 class="text-center pt-4 border-top mb-3">Add a list</h5>
+        <!-- <h5 class="text-center pt-4 border-top mb-3">Add a list:</h5> -->
         <form class="mx-auto" onsubmit="app.listController.addList(event);">
           <div class="form-group row justify-content-center">
-            <label for="name" class="col-sm-1-12 col-form-label"></label>
+            <label
+              id="AddListText"
+              for="name"
+              class="col-sm-1-12 col-form-label pr-2"
+              >Add a List:
+            </label>
             <div class="col-sm-1-12">
               <input
                 type="text"
@@ -88,8 +98,8 @@
     <footer class="container-fluid h-25 bg-dark text-white mt-4 text-center">
       <!-- why am I getting margin at the bottom? answer: <p> was introducing margin -->
       <div class="row flex-row">
-        <div class="col-12 align-content-center pt-3">
-          <div>Wield the power of the Listr wisely</div>
+        <div class="col-12 align-content-center pt-3 text-size-sm">
+          <div>Wield the power of the Listr wisely.</div>
         </div>
       </div>
     </footer>

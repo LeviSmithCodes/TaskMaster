@@ -31,13 +31,34 @@ export default class ListController {
   }
 
   deleteItem(listId, itemId) {
-    let delConfirmation = confirm(
-      "Are you sure you want to check off this item?"
-    );
-    if (delConfirmation) {
-      ListService.deleteItem(listId, itemId);
-      _drawLists();
-    }
+    // let delConfirmation = confirm(
+    //   "Are you sure you want to check off this item?"
+    // );
+    // if (delConfirmation) {
+    //   ListService.deleteItem(listId, itemId);
+    //   _drawLists();
+    // }
+
+    // ROUND 2: SweetAlert2
+    Swal.fire({
+      title: "Are you sure you want to complete this item?",
+      text: "You won't be able to revert this!",
+      icon: "warning",
+      showCancelButton: true,
+      confirmButtonColor: "#3085d6",
+      cancelButtonColor: "#d33",
+      confirmButtonText: "Yes, complete it!"
+    }).then(result => {
+      if (result.value) {
+        ListService.deleteItem(listId, itemId);
+        _drawLists();
+        Swal.fire(
+          "Completed!",
+          "Your item has been completed. You're a rockstar!",
+          "success"
+        );
+      }
+    });
   }
 
   addList(event) {
@@ -56,11 +77,31 @@ export default class ListController {
   }
 
   deleteList(listId) {
-    let delConfirmation = confirm("Are you sure you want to delete this list?");
-    if (delConfirmation) {
-      ListService.deleteList(listId);
-      _drawLists();
-    }
+    // let delConfirmation = confirm("Are you sure you want to delete this list?");
+    // if (delConfirmation) {
+    //   ListService.deleteList(listId);
+    //   _drawLists();
+    // }
+
+    Swal.fire({
+      title: "Are you sure you want to delete this list?",
+      text: "You won't be able to revert this!",
+      icon: "warning",
+      showCancelButton: true,
+      confirmButtonColor: "#3085d6",
+      cancelButtonColor: "#d33",
+      confirmButtonText: "Yes, delete it!"
+    }).then(result => {
+      if (result.value) {
+        ListService.deleteList(listId);
+        _drawLists();
+        Swal.fire(
+          "Completed!",
+          "Your list has been deleted. Look at you go!",
+          "success"
+        );
+      }
+    });
   }
 
   //TODO: Your app will need the ability to create, and delete both lists and listItems

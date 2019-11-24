@@ -18,17 +18,18 @@ export default class List {
   //For starting out, your tasks may be strings alone, but later you may wish to turn them into full objects, that will be up to you
 
   get template() {
-    return `<div class="col-5 mt-3 p-3 border rounded bg-info">
-    <h2 class="text-center mb-3 border-bottom text-white">
-      ${this.name}
-    </h2>
-    <dl class="ml-5 text-white">
-    ${this.drawItems()}</dl>
-    <form class="mx-auto" onsubmit="app.listController.addItem(event, '${
-      this.id
-    }')">
+    return `
+    <div class="col-12 col-lg-5 mt-3 mb-5 p-3 border border-dark bg-light">
+      <h2 class="text-center mb-3 border-bottom border-dark">
+        ${this.name}
+      </h2>
+      <dl class="ml-5">
+        ${this.drawItems()}</dl>
+      <form class="mx-auto" onsubmit="app.listController.addItem(event, '${
+        this.id
+      }')">
       <div class="form-group row justify-content-center">
-        <div class="col-sm-1-12">
+        <div class="col-12 col-sm-8 col-lg-8">
           <input
             type="text"
             class="form-control"

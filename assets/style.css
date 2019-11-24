@@ -7,6 +7,7 @@ main {
 }
 
 footer {
+  font-size: 0.7em;
   min-height: 10vh;
 }
 
@@ -23,6 +24,11 @@ body {
   /* content: '<i class= "far fa-check-square" ></i>'; */
   font-family: "FontAwesome";
   content: "\f14a";
+}
+
+#AddListText {
+  font-family: "Vollkorn", serif;
+  font-size: 1.25em;
 }
 
 /* .list-item-with-check:before {
