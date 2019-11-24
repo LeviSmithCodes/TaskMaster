@@ -12,6 +12,10 @@ footer {
   min-height: 10vh;
 }
 
+.btn-add {
+  background-color: #f07c94;
+}
+
 header,
 footer {
   background-color: #29122c;

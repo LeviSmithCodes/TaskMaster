@@ -41,7 +41,7 @@ export default class List {
       </div>
       <div class="row form-group justify-content-center">
         <div class="col-sm-8">
-          <button type="submit" class="btn btn-primary btn-block">
+          <button type="submit" class="btn text-white btn-add btn-block">
             Add Item
           </button>
         </div>

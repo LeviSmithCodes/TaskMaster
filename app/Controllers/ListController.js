@@ -74,6 +74,12 @@ export default class ListController {
     formData.reset();
 
     _drawLists();
+
+    Swal.fire(
+      "Congrats!",
+      "You added a list. What were you expecting, applause?",
+      "success"
+    );
   }
 
   deleteList(listId) {
