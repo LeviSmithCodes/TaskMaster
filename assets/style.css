@@ -3,7 +3,11 @@
 } */
 
 main {
-  height: 100vh;
+  min-height: 100vh;
+}
+
+footer {
+  min-height: 10vh;
 }
 
 html,
@@ -15,11 +19,32 @@ body {
   cursor: pointer;
 }
 
-/* .list-item-with-check:hover:before {
-  content: <i class= "far fa-square" ></i>;
-} */
+.list-item-with-check:hover:before {
+  /* content: '<i class= "far fa-check-square" ></i>'; */
+  font-family: "FontAwesome";
+  content: "\f14a";
+}
 
 /* .list-item-with-check:before {
   font-family: "FontAwesome";
   content: "\f0c8";
 } */
+/* 
+.button-list-submit {
+  width: 200px;
+  padding: 100px;
+} */
+
+h1 {
+  font-family: "Vollkorn", serif;
+  font-weight: bold;
+  font-style: italic;
+  font-size: 5em;
+  padding-top: 0.7em;
+}
+
+h2 {
+  font-family: "Vollkorn", serif;
+  font-size: 2em;
+  /* padding-top: 0.7em; */
+}

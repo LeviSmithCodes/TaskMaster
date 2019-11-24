@@ -13,6 +13,10 @@
       src="https://kit.fontawesome.com/4c4480abde.js"
       crossorigin="anonymous"
     ></script>
+    <link
+      href="https://fonts.googleapis.com/css?family=Vollkorn&display=swap"
+      rel="stylesheet"
+    />
     <title>Listr</title>
   </head>
 
@@ -20,8 +24,8 @@
     <header class="container-fluid h-25 bg-dark text-white text-center mb-3">
       <!-- REVIEW why is mb-3 not appearing to work?-->
       <h1>Listr</h1>
-      <div class="col-5 mt-3 p-3 border rounded bg-info">
-        <h3 class="text-center border-bottom">Add a list</h3>
+      <div class="col-12 mt-3 p-3 ">
+        <h5 class="text-center pt-4 border-top mb-3">Add a list</h5>
         <form class="mx-auto" onsubmit="app.listController.addList(event);">
           <div class="form-group row justify-content-center">
             <label for="name" class="col-sm-1-12 col-form-label"></label>
@@ -36,7 +40,7 @@
             </div>
           </div>
           <div class="form-group row justify-content-center">
-            <div class="col-sm-8">
+            <div class="col-sm-3">
               <button type="submit" class="btn btn-primary btn-block">
                 Submit
               </button>
@@ -81,9 +85,13 @@
         <div class="col-4"></div>
       </div> -->
     </main>
-    <footer class="container-fluid h-25 bg-dark text-white text-center">
-      <!-- FIXME why am I getting margin at the bottom? -->
-      <p>This be a footer yarr</p>
+    <footer class="container-fluid h-25 bg-dark text-white mt-4 text-center">
+      <!-- why am I getting margin at the bottom? answer: <p> was introducing margin -->
+      <div class="row flex-row">
+        <div class="col-12 align-content-center pt-3">
+          <div>Wield the power of the Listr wisely</div>
+        </div>
+      </div>
     </footer>
     <script src="app/main.js" type="module"></script>
   </body>

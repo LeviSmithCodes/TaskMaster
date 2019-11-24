@@ -19,9 +19,9 @@ export default class List {
 
   get template() {
     return `<div class="col-5 mt-3 p-3 border rounded bg-info">
-    <h1 class="text-center mb-3 border-bottom text-white">
+    <h2 class="text-center mb-3 border-bottom text-white">
       ${this.name}
-    </h1>
+    </h2>
     <dl class="ml-5 text-white">
     ${this.drawItems()}</dl>
     <form class="mx-auto" onsubmit="app.listController.addItem(event, '${
