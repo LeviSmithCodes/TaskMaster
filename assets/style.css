@@ -13,8 +13,17 @@ footer {
 
 html,
 body {
-  background-color: var(--secondary);
+  background-color: red;
+  /* var(--secondary); */
 }
+
+header,
+footer {
+  background-color: #29122c;
+}
+/* #lists {
+  background-color: blue;
+} */
 
 .list-item-with-check {
   cursor: pointer;
@@ -53,4 +62,17 @@ h2 {
   font-family: "Vollkorn", serif;
   font-size: 2em;
   /* padding-top: 0.7em; */
+}
+
+.bgi {
+  height: 100%;
+  background-attachment: fixed;
+  /* background-position: center; */
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#lists {
+  background-image: url("https://wallpaperaccess.com/full/508929.png");
+  /* background-image: url(http://freebigpictures.com/wp-content/uploads/2009/09/mountain-river.jpg); */
 }

@@ -19,7 +19,7 @@ export default class List {
 
   get template() {
     return `
-    <div class="col-12 col-lg-5 mt-3 mb-5 p-3 border border-dark bg-light">
+    <div class="col-12 col-lg-5 mt-5 mb-3 p-3 border border-dark bg-light">
       <h2 class="text-center mb-3 border-bottom border-dark">
         ${this.name}
       </h2>
