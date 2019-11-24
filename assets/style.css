@@ -4,6 +4,7 @@
 
 main {
   min-height: 100vh;
+  background-image: url("https://wallpaperaccess.com/full/508929.png");
 }
 
 footer {
@@ -11,19 +12,10 @@ footer {
   min-height: 10vh;
 }
 
-html,
-body {
-  background-color: red;
-  /* var(--secondary); */
-}
-
 header,
 footer {
   background-color: #29122c;
 }
-/* #lists {
-  background-color: blue;
-} */
 
 .list-item-with-check {
   cursor: pointer;
@@ -71,8 +63,8 @@ h2 {
   background-repeat: no-repeat;
   background-size: cover;
 }
-
+/* 
 #lists {
   background-image: url("https://wallpaperaccess.com/full/508929.png");
-  /* background-image: url(http://freebigpictures.com/wp-content/uploads/2009/09/mountain-river.jpg); */
-}
+  background-image: url(http://freebigpictures.com/wp-content/uploads/2009/09/mountain-river.jpg); 
+} */
