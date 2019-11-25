@@ -62,7 +62,7 @@ export default class ListController {
   }
 
   addList(event) {
-    // FIXME make body responsive in height to accomodate more lists
+    // Done! make body responsive in height to accomodate more lists
     event.preventDefault();
     let formData = event.target;
     let newList = {

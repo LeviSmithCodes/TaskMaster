@@ -60,6 +60,7 @@ h2 {
   /* padding-top: 0.7em; */
 }
 
+/* FIXME Why doesn't this work on actual mobile?? */
 .bgi {
   height: 100%;
   background-attachment: fixed;
