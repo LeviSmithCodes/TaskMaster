@@ -6,12 +6,13 @@ let _state = {
   lists: [
     new List({
       name: "To-Do",
+      id: "1234-5678",
       items: [
-        { text: "Hover over the checkbox (on desktop)" },
-        { text: "Complete this item" },
-        { text: "Create a new list" },
-        { text: "Create a new item on that list" },
-        { text: "Delete this list!" }
+        { listId: "1234-5678", text: "Hover over the checkbox (on desktop)" },
+        { listId: "1234-5678", text: "Complete this item" },
+        { listId: "1234-5678", text: "Create a new list" },
+        { listId: "1234-5678", text: "Create a new item on that list" },
+        { listId: "1234-5678", text: "Delete this (new) list!" }
       ]
     })
   ]
