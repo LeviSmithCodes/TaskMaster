@@ -12,7 +12,7 @@ let _state = {
         { listId: "1234-5678", text: "Complete this item" },
         { listId: "1234-5678", text: "Create a new list" },
         { listId: "1234-5678", text: "Create a new item on that list" },
-        { listId: "1234-5678", text: "Delete this (new) list!" }
+        { listId: "1234-5678", text: "Delete this list!" }
       ]
     })
   ]
