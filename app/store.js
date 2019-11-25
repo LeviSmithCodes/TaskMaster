@@ -6,7 +6,13 @@ let _state = {
   lists: [
     new List({
       name: "To-Do",
-      items: [{ text: "make cookies" }, { text: "test fakers" }]
+      items: [
+        { text: "Hover over the checkbox (on desktop)" },
+        { text: "Complete this item" },
+        { text: "Create a new list" },
+        { text: "Create a new item on that list" },
+        { text: "Delete this list!" }
+      ]
     })
   ]
 };
